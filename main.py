@@ -9,3 +9,4 @@ print('\n↓↓ Content ↓↓')
 print(response.content)
 site = BeautifulSoup(content,'html.parser')
 print (type(site))
+#exemplo
