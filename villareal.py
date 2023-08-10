@@ -1,7 +1,7 @@
-import urllib.request
+﻿import urllib.request
 from bs4 import BeautifulSoup
 
-response = urllib.request.urlopen('https://www.paodeacucar.com/')
+response = urllib.request.urlopen('https://www.villarrealonline.com.br/')
 content = response.read()
 
 print('Status code:', response.getcode())
@@ -20,6 +20,6 @@ for item in items:
 	if not value:
 		continue
 	print(value)
-	if 'product-cardstyles' in item.get('class'):
+	if 'border-promotion' == item.get('class'):
 		print(item)
 		print('-------------------------------------------------------')
